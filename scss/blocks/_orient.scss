@@ -1,0 +1,51 @@
+.orient {
+  padding-top: 26px;
+  &__list {
+    display: flex;
+    gap: 11.5px;
+    padding-bottom: 14px;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 11.5px;
+    &:nth-child(4) {
+      a {
+        color: $footer-links-color;
+      }
+    }
+    a {
+      @extend %links;
+      color: $main-color;
+    }
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__title {
+    display: flex;
+    h1 {
+      padding-right: 8px;
+      width: 194px;
+      height: 43px;
+      font-family: "TT Norms Pro", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    p {
+      padding-top: 8px;
+      width: 74px;
+      height: 19px;
+
+      font-family: "TT Norms Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $footer-links-color;
+    }
+  }
+}

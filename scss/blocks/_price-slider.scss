@@ -1,0 +1,79 @@
+.aside__price {
+  padding: 24px;
+  background-color: $btn-color;
+  border-radius: 12px;
+  .price__nav {
+    button {
+      padding-bottom: 19px;
+      display: flex;
+      align-items: center;
+      gap: 237.25px;
+      @extend %price;
+    }
+  }
+  .price__number {
+    display: flex;
+    gap: 10px;
+    .p-number__filter {
+      text-align: center;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      width: 141px;
+      height: 14px;
+      padding: 15px 0 15px 14px;
+      border: 1px solid #f2f2f2;
+      border-radius: 14px;
+
+      .p-number__meaning {
+        width: 70%;
+        outline: none;
+        border: none;
+        &::-webkit-input-placeholder {
+          -webkit-appearance: none;
+          color: $main-color;
+          @extend %big-numb;
+        }
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+
+      span {
+        @extend %links;
+        color: $footer-links-color;
+      }
+    }
+  }
+  .price__slider {
+    margin-top: 24px;
+  }
+}
+.noUi-target {
+  width: 292px;
+  height: 10px;
+  background-color: $input-range;
+  border: none;
+  border-radius: 44px;
+  box-shadow: none;
+}
+.noUi-connect {
+  background-color: $btn-bg-color;
+}
+.noUi-handle {
+  background: $btn-color;
+  box-shadow: 0px 1px 5px rgba(28, 38, 48, 0.15);
+}
+.noUi-horizontal .noUi-handle {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  &:active {
+    width: 27px;
+    height: 27px;
+  }
+}
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}

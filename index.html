@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container header">
+      <!-- section on header -->
+      <nav class="header-up">
+        <select class="header-up__city" name="city" id="city">
+          <option value="Tashkent">Ташкент</option>
+        </select>
+        <ul class="header-up__list">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Рассрочка</a></li>
+          <li><a href="#">Стать партнёром</a></li>
+          <li><a href="#">Приложение</a></li>
+        </ul>
+        <div class="header-up__lang">
+          <div class="contact__box">
+            <img src="./img/call.svg" alt="phone-call" />
+            <a href="#">998 97 123-45-67</a>
+          </div>
+          <div class="flag__box">
+            <img src="./img/flag.svg" alt="flag" />
+            <select name="lang" id="">
+              <option value="language">Русский</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- header -->
+      <section class="header-main">
+        <div class="header-main__logo">
+          <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="header-main__category">
+          <img src="./img/category.png" alt="category" />
+          <a href="#">Каталог</a>
+        </div>
+        <form class="header-main__form" action="https://echo.htmlacademy.ru/">
+          <select class="hMain__select" name="place" id="">
+            <option value="all-place">Везде</option>
+          </select>
+          <label for="search">
+            <input type="text" placeholder="Искать товары" />
+          </label>
+        </form>
+        <div class="hMain__search" name="search">
+          <img src="./img/search-white.svg" alt="search" />
+        </div>
+        <ul class="header-main__list">
+          <li class="header-main__item">
+            <div>
+              <img class="icon" src="./img/heart.svg" alt="#" />
+              <a href="#"> <p>Избранное</p></a>
+            </div>
+            <img class="line" src="./img/line.png" alt="line" />
+          </li>
+          <li class="header-main__item">
+            <div>
+              <img class="icon" src="./img/cart.svg" alt="#" />
+              <a href="#"> <p>Корзина</p></a>
+            </div>
+            <img class="line" src="./img/line.png" alt="line" />
+          </li>
+          <li class="header-main__item">
+            <div>
+              <img class="icon" src="./img/user.svg" alt="#" />
+              <a href="#"> <p>Войти</p></a>
+            </div>
+          </li>
+          <img class="favourites" src="./img/favourites.svg" alt="favourite" />
+        </ul>
+      </section>
+      <!-- section under header-->
+      <section class="header-down">
+        <ul class="header-down__list">
+          <li><a class="present" href="#">🎁</a></li>
+          <li><a href="#">Специальные предложения</a></li>
+          <li><a href="#">Скидки</a></li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Одежда</a></li>
+          <li><a href="#">Красота</a></li>
+          <li><a href="#">Дети</a></li>
+          <li><a href="#">Электроника</a></li>
+          <li><a href="#">Бытовая техника</a></li>
+          <li><a href="#">Дом</a></li>
+          <li><a href="#">Ремонт</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <!-- title section -->
+        <section class="orient">
+          <ul class="orient__list">
+            <li class="orient__items">
+              <a href="#">Главная</a>
+              <img src="./img/vectorRight.png" alt=">" />
+            </li>
+            <li class="orient__items">
+              <a href="#">Электроника </a>
+              <img src="./img/vectorRight.png" alt=">" />
+            </li>
+            <li class="orient__items">
+              <a href="#">Смартфоны и гаджеты</a>
+              <img src="./img/vectorRight.png" alt=">" />
+            </li>
+            <li class="orient__items">
+              <a href="#">Смартфоны</a>
+            </li>
+          </ul>
+          <div class="orient__title">
+            <h1>Смартфоны</h1>
+            <p>0 товаров</p>
+          </div>
+        </section>
+        <section class="main__body">
+          <!-- aside section -->
+          <aside class="aside">
+            <ul class="aside__main">
+              <li class="aside__item item1">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">Сегодня</a>
+              </li>
+              <li class="aside__item item2">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">Xiaomi</a>
+              </li>
+              <li class="aside__item item3">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">Apple</a>
+              </li>
+              <li class="aside__item item4">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">Цена</a>
+              </li>
+              <li class="aside__item item5">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#"><img src="./img/unchecked.png" alt="" /></a>
+              </li>
+              <li class="aside__item item6">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">NFC</a>
+              </li>
+              <li class="aside__item item7">
+                <p>
+                  <img src="./img/cancel.png" alt="x" />
+                </p>
+                <a href="#">Гибкий экран</a>
+              </li>
+              <li class="aside__item item8">
+                <img src="./img/cancel.png" alt="x" />
+                <a href="#">Очистить все</a>
+              </li>
+            </ul>
+            <section class="aside__category">
+              <div class="category__tree">
+                <a href="#">
+                  <button>
+                    Категория
+                    <img src="./img/vectorUp.png" alt=">" />
+                  </button>
+                </a>
+              </div>
+              <div class="category__branch">
+                <a href="#"> Электроника</a>
+                <a href="#"> Смартфоны и гаджеты</a>
+                <a href="#"> Смартфоны</a>
+              </div>
+            </section>
+            <section class="aside__price">
+              <div class="price__nav">
+                <button>
+                  Цена
+                  <img src="./img/vectorUp.png" alt=">" />
+                </button>
+              </div>
+              <div class="price__number">
+                <label class="p-number__filter">
+                  <span class="p-number__limit">от</span>
+                  <input
+                    id="price-from"
+                    type="number"
+                    min="500 000"
+                    max="12 000 000"
+                    placeholder="500 000"
+                    class="p-number__meaning"
+                  />
+                </label>
+                <label class="p-number__filter">
+                  <span class="p-number__limit">до</span>
+                  <input
+                    id="price-before"
+                    type="number"
+                    min="500 000"
+                    max="12 000 000"
+                    placeholder="12 000 000"
+                    class="p-number__meaning"
+                  />
+                </label>
+              </div>
+              <div class="price__slider" id="slider"></div>
+            </section>
+            <section class="aside__service" id="turn-btn">
+              <div class="service__item">
+                <p>Смартфоны и гаджеты</p>
+                <div class="btn-s switch-btn switch-on"></div>
+              </div>
+              <div class="service__item">
+                <p>В налачии</p>
+                <div class="btn-s switch-btn"></div>
+              </div>
+              <div class="service__item">
+                <p>Получить сегодня</p>
+                <div class="btn-s switch-btn"></div>
+              </div>
+              <div class="service__item">
+                <p>Со скидкой продавца</p>
+                <div class="btn-s switch-btn"></div>
+              </div>
+              <div class="service__item">
+                <p>Гарантия лучших цен</p>
+                <div class="btn-s switch-btn"></div>
+              </div>
+            </section>
+            <section class="aside__manufacturer">
+              <div class="manufacturer__nav">
+                <button>
+                  Производитель
+                  <img src="./img/vectorUp.png" alt=">" />
+                </button>
+              </div>
+              <form action="№">
+                <div class="manufacturer__search">
+                  <img src="./img/search-black.svg" alt="search" />
+                  <input type="search" placeholder="Найти производителя" />
+                </div>
+                <div class="manufacturer__check-list">
+                  <label>
+                    <input type="checkbox" />
+                    ASUS (13)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Alcatel (20)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Apple (149)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    BQ (62)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    BQ Mobile (7)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Black Fox (4)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Blackview (17)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Cat (4)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    DIGMA (1)
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Doogee (28)
+                  </label>
+                </div>
+              </form>
+            </section>
+            <section class="aside__service" id="turn-on">
+              <div class="service__item">
+                <p>Высокий рейтинг</p>
+                <div class="btn-s switch-btn switch-on"></div>
+              </div>
+            </section>
+          </aside>
+          <!-- main product -->
+          <section class="production">
+            <div class="production__title">
+              <div class="title__text">
+                <a href="#">Популярные</a>
+                <img src="./img/vectorDown.png" alt="vector" />
+              </div>
+              <div class="title__icons">
+                <a href="#">
+                  <img src="./img/icon-grid.png" alt="icons" />
+                </a>
+                <a href="#">
+                  <img src="./img/icon-list.png" alt="icons" />
+                </a>
+              </div>
+            </div>
+            <div class="production__important">
+              <div class="product-photo">
+                <img src="./img/yellow-cart.png" alt="cart" />
+              </div>
+              <div class="product-box">
+                <h3>Таких товаров нет</h3>
+                <p>
+                  Попробуйте смягчить условия поиска — то, что вам нужно,
+                  наверняка найдётся
+                </p>
+              </div>
+              <div class="product-btn">
+                <a href="#">
+                  <button>Сбросить фильтры</button>
+                </a>
+              </div>
+            </div>
+            <section class="our-products">
+              <div class="next__products">
+                <a href="#">
+                  <img src="./img/vectorRight.png" alt=">" />
+                </a>
+              </div>
+              <div class="our-products__title">
+                <h2>Популярные товары</h2>
+                <a href="#"
+                  >Смотреть всё <img src="./img/arrow-right.png" alt="arrow"
+                /></a>
+              </div>
+              <ul class="our-products__list">
+                <li class="our-products__item">
+                  <div class="skidka">
+                    <span>-12%</span>
+                  </div>
+                  <div class="favourite-icons">
+                    <img src="./img/heart.svg" alt="heart-icon" />
+                  </div>
+                  <div class="our-products__img">
+                    <img src="./img/toothbrush.png" alt="toothbrush" />
+                  </div>
+                  <div class="our-products__price">
+                    <h4>554 000 сум <sup>x 18 мес</sup></h4>
+                    <span>9 560 000 сум</span>
+                  </div>
+                  <div class="our-products__info">
+                    <p>
+                      16.1" Ноутбук Honor MagicBook Pro HLYL-WFQ9 (53011FJC)
+                    </p>
+                    <span>
+                      <img src="./img/stars-range.png" alt="star-icon" />
+                      4.6
+                    </span>
+                    <div class="our-products__btns">
+                      <button>В корзину</button>
+
+                      <img src="./img/eye.svg" alt="eye-icon" />
+                    </div>
+                  </div>
+                </li>
+                <li class="our-products__item">
+                  <div class="skidka">
+                    <span>-10%</span>
+                  </div>
+                  <div class="favourite-icons">
+                    <img src="./img/heart.svg" alt="heart-icon" />
+                  </div>
+                  <div class="our-products__img">
+                    <img src="./img/scooter.png" alt="scooter" />
+                  </div>
+                  <div class="our-products__price">
+                    <h4>554 000 сум <sup>x 18 мес</sup></h4>
+                    <span>9 560 000 сум</span>
+                  </div>
+                  <div class="our-products__info">
+                    <p>
+                      16.1" Ноутбук Honor MagicBook Pro HLYL-WFQ9 (53011FJC)
+                    </p>
+                    <span>
+                      <img src="./img/stars-range.png" alt="star-icon" />
+                      4.6
+                    </span>
+                    <div class="our-products__btns">
+                      <button>В корзину</button>
+
+                      <img src="./img/eye.svg" alt="eye-icon" />
+                    </div>
+                  </div>
+                </li>
+                <li class="our-products__item">
+                  <div class="super-sale">Супер цена</div>
+                  <div class="favourite-icons">
+                    <img src="./img/heart.svg" alt="heart-icon" />
+                  </div>
+                  <div class="our-products__img">
+                    <img src="./img/razor.png" alt="razor" />
+                  </div>
+                  <div class="our-products__price">
+                    <h4>554 000 сум <sup>x 18 мес</sup></h4>
+                    <span>9 560 000 сум</span>
+                  </div>
+                  <div class="our-products__info">
+                    <p>
+                      16.1" Ноутбук Honor MagicBook Pro HLYL-WFQ9 (53011FJC)
+                    </p>
+                    <span>
+                      <img src="./img/stars-range.png" alt="star-icon" />
+                      4.6
+                    </span>
+                    <div class="our-products__btns">
+                      <button>В корзину</button>
+
+                      <img src="./img/eye.svg" alt="eye-icon" />
+                    </div>
+                  </div>
+                </li>
+                <li class="our-products__item">
+                  <div class="skidka">
+                    <span>-20%</span>
+                  </div>
+                  <div class="favourite-icons">
+                    <img src="./img/heart.svg" alt="heart-icon" />
+                  </div>
+                  <div class="our-products__img">
+                    <img src="./img/tv.png" alt="tv" />
+                  </div>
+                  <div class="our-products__price">
+                    <h4>554 000 сум <sup>x 18 мес</sup></h4>
+                    <span>9 560 000 сум</span>
+                  </div>
+                  <div class="our-products__info">
+                    <p>
+                      16.1" Ноутбук Honor MagicBook Pro HLYL-WFQ9 (53011FJC)
+                    </p>
+                    <span>
+                      <img src="./img/stars-range.png" alt="star-icon" />
+                      4.6
+                    </span>
+                    <div class="our-products__btns">
+                      <button>В корзину</button>
+
+                      <img src="./img/eye.svg" alt="eye-icon" />
+                    </div>
+                  </div>
+                </li>
+                <li class="our-products__item">
+                  <div class="kash">Кешбэк 20%</div>
+                  <div class="favourite-icons">
+                    <img src="./img/heart.svg" alt="heart-icon" />
+                  </div>
+                  <div class="our-products__img">
+                    <img src="./img/tv.png" alt="phone" />
+                  </div>
+                  <div class="our-products__price">
+                    <h4>554 000 сум <sup>x 18 мес</sup></h4>
+                    <span>9 560 000 сум</span>
+                  </div>
+                  <div class="our-products__info">
+                    <p>
+                      16.1" Ноутбук Honor MagicBook Pro HLYL-WFQ9 (53011FJC)
+                    </p>
+                    <span>
+                      <img src="./img/stars-range.png" alt="star-icon" />
+                      4.6
+                    </span>
+                    <div class="our-products__btns">
+                      <button>В корзину</button>
+
+                      <img src="./img/eye.svg" alt="eye-icon" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <section class="contacts">
+        <div class="social">
+          <div class="header-main__logo">
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+          </div>
+          <p>© 2022 «Taqsim»</p>
+          <ul class="social__list">
+            <li class="social__items">
+              <img src="./img/instagram.svg" alt="instagram" />
+            </li>
+            <li class="social__items">
+              <img src="./img/facebook.svg" alt="instagram" />
+            </li>
+            <li class="social__items">
+              <img src="./img/telegram.svg" alt="instagram" />
+            </li>
+            <li class="social__items">
+              <img src="./img/youtube.svg" alt="instagram" />
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-links">
+          <li class="footer-items"><h3>Покупателям</h3></li>
+          <li class="footer-items"><a href="#">Как стать партнером</a></li>
+          <li class="footer-items"><a href="#">Условия партнерства</a></li>
+          <li class="footer-items"><a href="#">Для разработчиков</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li class="footer-items"><h3>Партнерам</h3></li>
+          <li class="footer-items"><a href="#">Доставка</a></li>
+          <li class="footer-items"><a href="#">Способы оплаты</a></li>
+          <li class="footer-items"><a href="#">Рассрочка</a></li>
+          <li class="footer-items"><a href="#">Профиль</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li class="footer-items"><h3>Taqsim</h3></li>
+          <li class="footer-items"><a href="#">О компании</a></li>
+          <li class="footer-items"><a href="#">Наш блог</a></li>
+          <li class="footer-items"><a href="#">Наши партнеры</a></li>
+          <li class="footer-items"><a href="#">Поддержка</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li class="footer-items"><h3>Правовая информация</h3></li>
+          <li class="footer-items">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="footer-items"><a href="#">Условия использования</a></li>
+          <li class="footer-items"><a href="#">Правила сервиса</a></li>
+        </ul>
+        <section class="support">
+          <div class="support__links">
+            <a>998 97 123-45-67</a>
+            <p>Служба поддержки 24/7</p>
+          </div>
+          <div class="support__links">
+            <a>support@taqsim.uz</a>
+            <p>Почта</p>
+          </div>
+        </section>
+      </section>
+      <section class="footer__about">
+        <p>
+          ©Taqsim 2020–2022. Все права защищены. Указанная в интернет-магазине
+          цена товаров и условия их приобретения действительны на текущую дату.
+        </p>
+      </section>
+    </footer>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/script-slider.js"></script>
+    <script src="./js/switch-btn.js"></script>
+  </body>
+</html>

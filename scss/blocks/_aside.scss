@@ -1,0 +1,110 @@
+.aside {
+  width: 340px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  button {
+    border: none;
+    background-color: $btn-color;
+  }
+  &__main {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(8, auto);
+    column-gap: 5px;
+    padding: 20px;
+    border-radius: 12px;
+    height: 156px;
+    background-color: $btn-color;
+    .item1 {
+      grid-column: 1 / span 3;
+    }
+    .item2 {
+      grid-column: 4 / span 3;
+    }
+    .item3 {
+      grid-column: 7 / span 2;
+    }
+    .item4 {
+      grid-column: 1 / span 3;
+    }
+    .item5 {
+      grid-column: 4 / span 2;
+    }
+    .item6 {
+      grid-column: 6 / span 2;
+    }
+    .item7 {
+      grid-column: 1 / span 4;
+    }
+    .item8 {
+      grid-column: 5 / span 4;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px;
+    border: 1px solid rgba(209, 206, 206, 0.627);
+    border-radius: 10px;
+    p {
+      padding-top: 1px;
+      border: none;
+      background-color: $btn-color;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    a {
+      @extend %main__product;
+      color: $main-color;
+    }
+    &:nth-child(8) {
+      background-color: rgba(209, 206, 206, 0.627);
+    }
+  }
+  &__category {
+    padding: 25px 29.5px 24px 24px;
+    background-color: $btn-color;
+    border-radius: 12px;
+    button {
+      display: flex;
+      align-items: center;
+      gap: 197.25px;
+    }
+    .category__tree {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 17px;
+      button {
+        font-family: "TTNormsPro-Medium", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .category__branch {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      a {
+        @extend %links;
+        color: $main-color;
+        &:hover {
+          font-weight: 700;
+        }
+        &:nth-child(2) {
+          padding-left: 10px;
+        }
+        &:nth-child(3) {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

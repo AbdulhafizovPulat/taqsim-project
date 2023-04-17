@@ -1,0 +1,53 @@
+.aside__service {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .service__item {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $btn-color;
+    border-radius: 12px;
+    p {
+      width: 216px;
+      height: 19px;
+      @extend %links;
+      color: $main-color;
+    }
+  }
+
+  .switch-btn {
+    display: inline-block;
+    width: 51px;
+    height: 31px;
+    border-radius: 19px;
+    background: rgba(120, 120, 128, 0.16);
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: calc(50% - 31px / 2 + 0px);
+    transition-duration: 300ms;
+  }
+  .switch-btn::after {
+    content: "";
+    width: 27px;
+    height: 27px;
+    border-radius: 17px;
+    background: $btn-color;
+    left: calc(50% - 27px / 2 - 10px);
+    top: calc(50% - 27px / 2);
+
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  }
+  .switch-on {
+    background: $btn-bg-color;
+  }
+  .switch-on::after {
+    left: calc(50% - 27px / 2 + 10px);
+  }
+}

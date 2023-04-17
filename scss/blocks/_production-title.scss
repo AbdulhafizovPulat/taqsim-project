@@ -1,0 +1,70 @@
+.production {
+  margin-top: 24px;
+  &__title {
+    display: flex;
+    gap: 612px;
+    .title__text {
+      display: flex;
+      gap: 197.25px;
+      align-items: center;
+      padding: 15px 25.25px 15px 20px;
+      background-color: $btn-color;
+      border-radius: 12px;
+      a {
+        @extend %btn-place;
+        color: $main-color;
+      }
+    }
+    .title__icons {
+      padding: 9.5px 24px;
+      background-color: $btn-color;
+      border-radius: 12px;
+      display: flex;
+      gap: 13.33px;
+    }
+  }
+  &__important {
+    text-align: center;
+    margin-top: 20px;
+    padding: 64px 270px;
+    background-color: $btn-color;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .product-photo {
+      width: 207px;
+      height: 154px;
+      img {
+        width: 100%;
+      }
+    }
+    .product-box {
+      padding: 24px 0;
+      width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h3 {
+        @extend %sub-title;
+        color: $main-color;
+      }
+      p {
+        @extend %text;
+        color: $main-color;
+      }
+    }
+    .product-btn {
+      button {
+        width: 315px;
+        padding: 15px 0;
+        background-color: $btn-bg-color;
+        color: $btn-color;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

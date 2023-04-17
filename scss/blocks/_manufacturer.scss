@@ -1,0 +1,83 @@
+.aside__manufacturer {
+  padding: 24px;
+  background-color: $btn-color;
+  border-radius: 12px;
+  .manufacturer__nav {
+    button {
+      padding-bottom: 19px;
+      display: flex;
+      align-items: center;
+      gap: 159.25px;
+      @extend %price;
+    }
+  }
+  .manufacturer__search {
+    text-align: center;
+    padding: 12px 17.33px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $input-range;
+    input {
+      width: 181px;
+      margin-left: 10px;
+      border: none;
+      &::-webkit-input-placeholder {
+        -webkit-appearance: none;
+        color: $footer-links-color;
+        @extend %product;
+      }
+    }
+  }
+  .manufacturer__check-list {
+    display: flex;
+    row-gap: 14px;
+    flex-direction: column;
+    margin-top: 14px;
+    height: calc(455px - 103px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+      max-height: 45px;
+      background: #f2f2f2;
+      border-radius: 5px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      @extend %links;
+      color: $main-color;
+    }
+    input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-appearance: none;
+      width: 24px;
+      height: 24px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 6px;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover {
+        background-color: $input-range;
+      }
+      &:checked {
+        background-color: $btn-color;
+      }
+      &::after {
+        content: "✔";
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        color: $main-color;
+        display: none;
+      }
+      &:checked::after {
+        display: block;
+      }
+    }
+  }
+}

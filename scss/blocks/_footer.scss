@@ -1,0 +1,86 @@
+.footer {
+  margin-top: 48px;
+  padding: 30px;
+  background-color: $btn-color;
+  .contacts {
+    display: flex;
+    gap: 63px;
+    margin-bottom: 48px;
+  }
+  .social {
+    margin-right: 20px;
+    p {
+      margin: 12.32px 0 45px;
+      @extend %links;
+      color: $footer-links-color;
+    }
+    &__list {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: $social-icons;
+      border-radius: 500px;
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    h3 {
+      @extend %price-product;
+      color: $main-color;
+      margin-bottom: 4px;
+    }
+    a {
+      @extend %links;
+      color: $footer-links-color;
+      &:hover {
+        color: $arrow-color;
+        font-weight: 500;
+      }
+    }
+  }
+  .support {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      a {
+        @extend %price-product;
+        color: $main-color;
+        margin-bottom: 4px;
+        cursor: pointer;
+      }
+      p {
+        @extend %links;
+        color: $footer-links-color;
+      }
+    }
+  }
+  &__about {
+    border-top: 1px solid $form-bordr;
+    p {
+      letter-spacing: 0.7px;
+      margin-top: 14.5px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      color: $footer-links-color;
+    }
+  }
+}
