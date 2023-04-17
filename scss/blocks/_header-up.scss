@@ -1,0 +1,51 @@
+.header-up {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  &__city {
+    color: $main-color;
+    border: none;
+    margin-right: 93.5px;
+    @extend %links;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 430.5px;
+
+    a {
+      @extend %links;
+      color: $main-color;
+    }
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    .contact__box {
+      margin-right: 34px;
+      img {
+        width: 14.98px;
+        margin-right: 9.52px;
+      }
+      display: flex;
+      align-items: center;
+      @extend %links;
+      a {
+        color: $main-color;
+      }
+    }
+    .flag__box {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      select {
+        @extend %links;
+        border: none;
+        color: $main-color;
+      }
+    }
+  }
+}

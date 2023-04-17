@@ -1,0 +1,18 @@
+.header__line {
+  border-bottom: 1px solid $form-bordr;
+  position: relative;
+  top: 60px;
+}
+
+.header-down {
+  display: flex;
+  gap: 6px;
+  &__list {
+    display: flex;
+    gap: 59px;
+    a {
+      @extend %product;
+      color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.header-main {
+  padding: 17px 0 32px;
+  display: flex;
+  align-items: center;
+  &__category {
+    margin-left: 34.88px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background-color: $btn-bg-color;
+    padding: 13px 21px 13px 19px;
+    border-radius: 10px;
+    a {
+      @extend %btn-category;
+      color: $btn-color;
+    }
+  }
+  &__form {
+    width: 680px;
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $form-bordr;
+    border-radius: 10px;
+    .hMain__select {
+      margin-left: 18px;
+      border: none;
+      border-right: 1px solid $form-bordr;
+      color: $form-category;
+      @extend %btn-place;
+    }
+    label {
+      margin-left: 15px;
+      display: flex;
+      justify-content: space-between;
+      width: 676px;
+      input {
+        padding: 13.5px 0;
+        position: relative;
+        z-index: 4;
+        width: 88%;
+        padding-left: 15px;
+        @extend %links;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .hMain__search {
+    display: flex;
+    padding: 10px 25px;
+    background-color: $form-bordr;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    right: 70px;
+    z-index: 2;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    .favourites {
+      position: absolute;
+      top: -11px;
+      left: 59px;
+    }
+  }
+  &__item {
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+    &:nth-child(1) {
+      padding-right: 14px;
+      border-right: 1px solid #e0e0e0;
+    }
+    &:nth-child(2) {
+      padding-right: 14px;
+      border-right: 1px solid #e0e0e0;
+    }
+    .icon {
+      width: 18px;
+      height: 16px;
+    }
+    a {
+      @extend %links;
+    }
+    .line {
+      width: 0.5px;
+      height: 24px;
+    }
+  }
+}

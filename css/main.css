@@ -21,7 +21,7 @@
        column-gap: 20px;
 }
 
-.footer .support__links p, .footer .footer-links a, .footer .social p, .our-products__title a, .aside__manufacturer .manufacturer__check-list label, .aside__category .category__branch a, .orient__items a, .header .header-main__item a, .header .header-main__form label input, .header .header-up__lang .flag__box select, .header .header-up__lang .contact__box, .header .header-up__list a, .header .header-up__city, .aside__service .service__item p, .aside__price .price__number .p-number__filter span {
+.footer .support__links p, .footer .footer-links a, .footer .social p, .our-products__title a, .aside__manufacturer .manufacturer__check-list label, .aside__category .category__branch a, .orient__items a, .header-main__item a, .header-main__form label input, .header-up__lang .flag__box select, .header-up__lang .contact__box, .header-up__list a, .header-up__city, .aside__service .service__item p, .aside__price .price__number .p-number__filter span {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -29,7 +29,7 @@
   line-height: 17px;
 }
 
-.aside__manufacturer .manufacturer__search input::-webkit-input-placeholder, .header .header-down__list a {
+.aside__manufacturer .manufacturer__search input::-webkit-input-placeholder, .header-down__list a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@
   line-height: 20px;
 }
 
-.header .header-main__category a {
+.header-main__category a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -61,7 +61,7 @@
   line-height: 16px;
 }
 
-.our-products__price h4 sup, .production__title .title__text a, .header .header-main__form .hMain__select {
+.our-products__price h4 sup, .production__title .title__text a, .header-main__form .hMain__select {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -107,14 +107,6 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-}
-
-.header .header-down__list .present {
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 22px;
 }
 
 .aside__manufacturer .manufacturer__nav button, .aside__price .price__nav button {
@@ -262,58 +254,59 @@
   left: calc(50% - 13.5px + 10px);
 }
 
-.header .header-up {
+.header-up {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   padding: 10px 0;
-  border-bottom: 1px solid #e0e0e0;
 }
-.header .header-up__city {
+.header-up__city {
   color: #272a39;
   border: none;
   margin-right: 93.5px;
 }
-.header .header-up__list {
+.header-up__list {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-right: 480.5px;
+  margin-right: 430.5px;
 }
-.header .header-up__list a {
+.header-up__list a {
   color: #272a39;
 }
-.header .header-up__lang {
+.header-up__lang {
   display: flex;
   align-items: center;
 }
-.header .header-up__lang .contact__box {
-  margin-right: 34.56px;
+.header-up__lang .contact__box {
+  margin-right: 34px;
   display: flex;
   align-items: center;
 }
-.header .header-up__lang .contact__box img {
+.header-up__lang .contact__box img {
   width: 14.98px;
   margin-right: 9.52px;
 }
-.header .header-up__lang .contact__box a {
+.header-up__lang .contact__box a {
   color: #272a39;
 }
-.header .header-up__lang .flag__box {
+.header-up__lang .flag__box {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.header .header-up__lang .flag__box select {
+.header-up__lang .flag__box select {
   border: none;
   color: #272a39;
 }
-.header .header-main {
+
+.header-main {
   padding: 17px 0 32px;
   display: flex;
   align-items: center;
 }
-.header .header-main__category {
+.header-main__category {
   margin-left: 34.88px;
   display: flex;
   align-items: center;
@@ -322,10 +315,10 @@
   padding: 13px 21px 13px 19px;
   border-radius: 10px;
 }
-.header .header-main__category a {
+.header-main__category a {
   color: #ffffff;
 }
-.header .header-main__form {
+.header-main__form {
   width: 680px;
   margin-left: 18px;
   display: flex;
@@ -333,19 +326,19 @@
   border: 1px solid #e0e0e0;
   border-radius: 10px;
 }
-.header .header-main__form .hMain__select {
+.header-main__form .hMain__select {
   margin-left: 18px;
   border: none;
   border-right: 1px solid #e0e0e0;
   color: #272a39;
 }
-.header .header-main__form label {
+.header-main__form label {
   margin-left: 15px;
   display: flex;
   justify-content: space-between;
   width: 676px;
 }
-.header .header-main__form label input {
+.header-main__form label input {
   padding: 13.5px 0;
   position: relative;
   z-index: 4;
@@ -354,7 +347,7 @@
   border: none;
   outline: none;
 }
-.header .header-main .hMain__search {
+.header-main .hMain__search {
   display: flex;
   padding: 10px 25px;
   background-color: #e0e0e0;
@@ -364,42 +357,54 @@
   right: 70px;
   z-index: 2;
 }
-.header .header-main__list {
+.header-main__list {
   display: flex;
   align-items: center;
   text-align: center;
   position: relative;
 }
-.header .header-main__list .favourites {
+.header-main__list .favourites {
   position: absolute;
   top: -11px;
   left: 59px;
 }
-.header .header-main__item {
+.header-main__item {
   display: flex;
-  gap: 14px;
   padding-left: 24px;
   align-items: center;
 }
-.header .header-main__item:nth-child(1) {
-  margin-right: 24.5px;
+.header-main__item:nth-child(1) {
+  padding-right: 14px;
+  border-right: 1px solid #e0e0e0;
 }
-.header .header-main__item:nth-child(2) {
-  margin-right: 40.5px;
+.header-main__item:nth-child(2) {
+  padding-right: 14px;
+  border-right: 1px solid #e0e0e0;
 }
-.header .header-main__item .icon {
+.header-main__item .icon {
   width: 18px;
   height: 16px;
 }
-.header .header-main__item .line {
+.header-main__item .line {
   width: 0.5px;
   height: 24px;
 }
-.header .header-down__list {
+
+.header__line {
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  top: 60px;
+}
+
+.header-down {
+  display: flex;
+  gap: 6px;
+}
+.header-down__list {
   display: flex;
   gap: 59px;
 }
-.header .header-down__list a {
+.header-down__list a {
   color: #272a39;
 }
 
@@ -600,7 +605,9 @@
 .aside__manufacturer .manufacturer__check-list::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
-  max-height: 45px;
+  height: 45px;
+}
+.aside__manufacturer .manufacturer__check-list::-webkit-scrollbar-thumb {
   background: #f2f2f2;
   border-radius: 5px;
 }
