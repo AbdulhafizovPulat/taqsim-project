@@ -77,3 +77,20 @@
 .noUi-handle::before {
   display: none;
 }
+@media (max-width: 1339px) {
+  .aside__price {
+    padding: 15px;
+    .price__nav {
+      button {
+        padding-bottom: 19px;
+        display: flex;
+        align-items: center;
+        gap: 203px;
+        @extend %price;
+      }
+    }
+  }
+  .noUi-target {
+    width: 242px;
+  }
+}

@@ -83,3 +83,37 @@
     }
   }
 }
+@media (max-width: 1339px) {
+  .aside__manufacturer {
+    padding: 12px;
+    .manufacturer__nav {
+      button {
+        padding-bottom: 12px;
+        gap: 126px;
+      }
+    }
+    .manufacturer__search {
+      width: 230px;
+      padding: 5px 5px;
+      align-items: center;
+      input {
+        margin-left: 5px;
+        &::-webkit-input-placeholder {
+          -webkit-appearance: none;
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+    }
+    .manufacturer__check-list {
+      label {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      input {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

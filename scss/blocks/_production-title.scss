@@ -2,10 +2,10 @@
   margin-top: 24px;
   &__title {
     display: flex;
-    gap: 612px;
+    gap: 580px;
     .title__text {
       display: flex;
-      gap: 197.25px;
+      gap: 147.25px;
       align-items: center;
       padding: 15px 25.25px 15px 20px;
       background-color: $btn-color;
@@ -24,6 +24,7 @@
     }
   }
   &__important {
+    width: 443px;
     text-align: center;
     margin-top: 20px;
     padding: 64px 270px;
@@ -64,6 +65,53 @@
         border: none;
         border-radius: 12px;
         cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .production {
+    &__title {
+      gap: 620px;
+      .title__text {
+        gap: 70.25px;
+      }
+    }
+    &__important {
+      width: 616px;
+      padding: 64px 165px;
+    }
+  }
+}
+@media (max-width: 1339px) {
+  .production {
+    &__title {
+      gap: 430px;
+      .title__text {
+        gap: 70.25px;
+      }
+    }
+    &__important {
+      width: 424px;
+      padding: 64px 165px;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .production {
+    &__title {
+      gap: 335px;
+    }
+    &__important {
+      width: 330px;
+      .product-box {
+        width: 400px;
+      }
+      .product-btn {
+        button {
+          width: 270px;
+          padding: 15px 0;
+        }
       }
     }
   }

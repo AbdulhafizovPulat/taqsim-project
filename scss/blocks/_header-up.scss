@@ -49,3 +49,35 @@
     }
   }
 }
+@media (max-width: 1339px) {
+  .header-up {
+    &__city {
+      margin-right: 67px;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-right: 200px;
+    }
+    .contact__box {
+      margin-right: 26px;
+    }
+  }
+}
+@media only screen and (max-width: 1073px) {
+  .header-up {
+    &__city {
+      margin-right: 47px;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-right: 140px;
+    }
+    .contact__box {
+      margin-right: 22px;
+    }
+  }
+}

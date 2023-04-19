@@ -51,3 +51,37 @@
     left: calc(50% - 27px / 2 + 10px);
   }
 }
+@media (max-width: 1339px) {
+  .aside__service {
+    .service__item {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $btn-color;
+      border-radius: 12px;
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  .switch-btn {
+    width: 41px;
+    height: 21px;
+  }
+  .switch-btn::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: calc(50% - 17px / 2 - 10px);
+    top: calc(50% - 17px / 2);
+  }
+  .switch-on {
+    background: $btn-bg-color;
+  }
+  .switch-on::after {
+    left: calc(50% - 17px / 2 + 10px);
+  }
+}

@@ -20,56 +20,14 @@
     }
   }
   &__list {
-    width: 1060px;
+    width: 980px;
     overflow-x: hidden;
     display: flex;
     gap: 14px;
   }
-  .super-sale {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    padding: 3px 10px;
-    background: linear-gradient(94.89deg, #7000ff 9.22%, #ff00b8 95.08%);
-    border-radius: 17px;
-  }
-  .skidka {
-    margin-left: 10px;
-    padding: 3px 10px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: $btn-color;
-    background-color: $discount-bg-color;
-    border-radius: 17px;
-  }
-  .kash {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #ffffff;
-    padding: 3px 10px;
-    background: #01224e;
-    border-radius: 17px;
-  }
-  .favourite-icons {
-    position: relative;
-    left: 90%;
-    top: -2.79%;
-    z-index: 20000;
-  }
+
   &__item {
-    padding: 0 11px 16px;
+    padding: 0 7px 16px;
     border-radius: 12px;
     background-color: $btn-color;
     display: flex;
@@ -77,8 +35,8 @@
     flex-direction: column;
   }
   &__img {
-    width: 214px !important;
-    height: 214px;
+    width: 207px !important;
+    height: 207px;
     img {
       width: 100%;
     }
@@ -129,7 +87,7 @@
     align-items: center;
     gap: 4px;
     button {
-      padding: 10px 46.5px;
+      padding: 10px 45.5px;
       border-radius: 6px;
       border: none;
       background-color: $btn-bg-color;
@@ -146,8 +104,8 @@
   }
   .next__products {
     position: relative;
-    top: 360px;
-    right: -1047px;
+    top: 381px;
+    right: -965px;
     z-index: 500000;
     a {
       display: flex;
@@ -160,6 +118,113 @@
     }
     img {
       margin-left: 17px;
+    }
+  }
+  .favourite-icons {
+    position: relative;
+    top: 22px;
+    right: -180px;
+    height: 0;
+  }
+  .down-price {
+    padding: 3px 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 17px;
+    color: $btn-color;
+    position: absolute;
+    top: 1018px;
+    z-index: 19;
+  }
+  .usualy-discount {
+    background: #f71757;
+  }
+  .super-discount {
+    background: linear-gradient(94.89deg, #7000ff 9.22%, #ff00b8 95.08%);
+  }
+  .kash-discount {
+    width: 14px;
+    background: #01224e;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1490px) {
+  .our-products {
+    .down-price {
+      top: 1025px;
+    }
+  }
+}
+@media (max-width: 1360px) {
+  .our-products {
+    &__title {
+      display: flex;
+      justify-content: flex-start;
+      gap: 580px;
+      h3 {
+      }
+      a {
+        gap: 10px;
+      }
+    }
+    &__list {
+      width: 920px;
+      overflow-x: hidden;
+      display: flex;
+      gap: 14px;
+    }
+    .next__products {
+      position: relative;
+      top: 381px;
+      right: -900px;
+    }
+    .kash-discount {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1339px) {
+  .our-products {
+    &__title {
+      gap: 360px;
+    }
+    &__list {
+      width: 700px;
+      gap: 18px;
+    }
+    &__item {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    .next__products {
+      position: relative;
+      top: 381px;
+      right: -675px;
+    }
+  }
+}
+@media (max-width: 1060px) {
+  .our-products {
+    &__title {
+      gap: 340px;
+    }
+    &__list {
+      width: 655px;
+      gap: 18px;
+    }
+    &__item {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    .next__products {
+      position: relative;
+      top: 381px;
+      right: -630px;
     }
   }
 }

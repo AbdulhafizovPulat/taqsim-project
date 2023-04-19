@@ -1,0 +1,55 @@
+.aside {
+  &__category {
+    padding: 25px 29.5px 24px 24px;
+    background-color: $btn-color;
+    border-radius: 12px;
+    button {
+      display: flex;
+      align-items: center;
+      gap: 197.25px;
+    }
+    .category__tree {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 17px;
+      button {
+        font-family: "TTNormsPro-Medium", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .category__branch {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      a {
+        @extend %links;
+        color: $main-color;
+        &:hover {
+          font-weight: 700;
+        }
+        &:nth-child(2) {
+          padding-left: 10px;
+        }
+        &:nth-child(3) {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1339px) {
+  .aside {
+    &__category {
+      padding: 12px 12px 12px 12px;
+      button {
+        gap: 167px;
+        align-items: baseline;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}

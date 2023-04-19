@@ -49,3 +49,15 @@
     }
   }
 }
+@media (max-width: 1073px) {
+  .orient {
+    &__title {
+      h1 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

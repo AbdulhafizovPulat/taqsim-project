@@ -16,3 +16,29 @@
     }
   }
 }
+
+@media (max-width: 1347px) {
+  .header-down {
+    &__list {
+      gap: 58px;
+    }
+  }
+}
+@media (max-width: 1339px) {
+  .header-down {
+    &__list {
+      gap: 44px;
+      a {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 1073px) {
+  .header-down {
+    &__list {
+      gap: 35px;
+    }
+  }
+}
